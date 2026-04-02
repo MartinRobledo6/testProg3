@@ -1,0 +1,106 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    background-color: grey;
+}
+.titulo{
+    color: yellow;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+        "titulo titulo titulo"
+    "img    img    precio"
+    "img    img    descripcion"
+    "img    img    link"
+    "resenias resenias resenias";
+}
+.subtitulo{
+    grid-area: titulo;
+    font-size: 2.5rem;
+}
+.img{
+    grid-area: img;
+    max-width: 60rem;
+    border-radius: .5rem;
+}
+.content{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    margin: 3rem;
+    padding: 1.5rem;
+    background-color: white;
+}
+.link{
+    grid-area: link;
+    background-color: white;
+    font-size: .5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.link:hover{
+    grid-area: link;
+    background-color: black;
+    color: white;
+}
+.precio{
+    grid-area: precio;
+    color: blue;
+    font-size: 3rem;
+}
+.coment{
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+}
+.lista-comentarios{
+    border: .5rem solid yellow;
+    padding: 2rem;
+    margin: 3rem;
+}
+.comentario-item{
+    grid-area: resenias;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+.formulario{
+    margin: 3rem;
+    padding: 2rem;
+    font-size: 2rem;
+}
+.formulario textarea{
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    resize: vertical;
+}
+.formulario input[type="radio"]{
+    transform: scale(1.2);
+    margin: 0 1rem 0 .5rem;
+}
+.formulario input[type="submit"]{
+    padding: 1rem 3rem;
+    margin-top: 1.5rem;
+    background-color: yellow;
+    border: .2rem solid black;
+    cursor: pointer;
+}
+.formulario input[type="submit"]:hover{
+    background-color: black;
+    color: white;
+}
+.descripcion{
+    grid-area: descripcion;
+}
+
+
