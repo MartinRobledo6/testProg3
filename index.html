@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Robledo Tienda</title>
+  </head>
+  <body>
+    <h1 class="titulo">Robledo Tienda</h1>
+
+    <div class="container">
+      <h2 class="subtitulo">Macbook pro m5</h2>
+      <img src="img/macbook.jpg" class="img" alt="macbook" />
+      <p class="precio">$1.500.000</p>
+
+      <div class="descripcion">
+        <p>
+          La MacBook Pro M5 es una laptop profesional de Apple diseñada para
+          alto rendimiento.
+        </p>
+        <ul>
+          <li>
+            Incorpora el chip M5 (arquitectura de 3 nm) con CPU y GPU más
+            rápidos.
+          </li>
+          <li>Memoria unificada desde 16 GB.</li>
+          <li>
+            Pantalla Liquid Retina XDR, cámara 12 MP, múltiples puertos
+            Thunderbolt y hasta 24 horas de batería, enfocada en tareas
+            exigentes como programación, edición y trabajo creativo.
+          </li>
+        </ul>
+      </div>
+
+      <a
+        class="link"
+        href="https://www.apple.com/la/macbook-pro/"
+        target="_blank"
+        >Comprar</a
+      >
+
+      <hr class="linea1" />
+
+      <h3 class="coment">Reseñas</h3>
+
+      <div class="lista-comentarios">
+        <div class="comentario-item">
+          <p>
+            <strong>Juan Pérez</strong><br />
+            ¡Excelente computadora! Muy rápida para programar y la batería dura
+            un montón.
+          </p>
+          <p>Calificación: 5/5</p>
+        </div>
+        <hr />
+        <div class="comentario-item">
+          <p>
+            <strong>Maria García</strong><br />
+            Es una maquina increible.
+          </p>
+          <p>Calificación: 4/5</p>
+        </div>
+      </div>
+
+      <hr class="linea2" />
+
+      <div class="formulario">
+        <h3>Deja una reseña</h3>
+        <form action="#" method="post">
+          <textarea
+            required
+            name="comentario"
+            placeholder="Comentario"
+          ></textarea>
+          <br />
+          <label> 1<input type="radio" name="puntuacion" value="1" /> </label>
+          <label> 2<input type="radio" name="puntuacion" value="2" /> </label>
+          <label> 3<input type="radio" name="puntuacion" value="3" /> </label>
+          <label> 4<input type="radio" name="puntuacion" value="4" /> </label>
+          <label> 5<input type="radio" name="puntuacion" value="5" /> </label>
+          <br />
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
