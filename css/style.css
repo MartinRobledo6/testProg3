@@ -20,7 +20,6 @@ body {
     text-align: center;
 }
 
-/* ACÁ ESTÁ LA MAGIA DEL GRID */
 .container {
     display: grid;
     grid-template-columns: 45% 55%; 
