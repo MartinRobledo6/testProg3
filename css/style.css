@@ -1,143 +1,145 @@
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
-    background-color: green; 
-    margin: 0;
-    padding: 2rem;
+  background-color: green;
+  margin: 0;
+  padding: 2rem;
 }
 
 .titulo {
-    color: red; 
-    font-size: 3rem;
-    text-transform: uppercase;
-    text-align: center;
+  color: yellow;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 45% 55%; 
-    grid-template-areas: 
-        "img titulo"
-        "img precio"
-        "img descripcion"
-        "img link"
-        "linea1 linea1"
-        "coment coment"
-        "lista-comentarios lista-comentarios"
-        "linea2 linea2"
-        "opinion opinion";
-    gap: 2rem; 
-    padding: 2rem;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-areas:
+    "img titulo"
+    "img precio"
+    "img descripcion"
+    "img link"
+    "linea1 linea1"
+    "coment coment"
+    "lista-comentarios lista-comentarios"
+    "linea2 linea2"
+    "opinion opinion";
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .img {
-    grid-area: img;
-    width: 100%;
-    border: .5rem solid black;
+  grid-area: img;
+  width: 100%;
+  border: .5rem solid black;
 }
 
 .subtitulo {
-    grid-area: titulo;
-    font-size: 2.5rem;
-    margin: 0;
+  grid-area: titulo;
+  font-size: 2.5rem;
+  margin: 0;
 }
 
 .precio {
-    grid-area: precio;
-    font-size: 3rem;
-    margin: 0;
+  grid-area: precio;
+  font-size: 3rem;
+  margin: 0;
 }
 
 .descripcion {
-    grid-area: descripcion;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    margin: 0;
+  grid-area: descripcion;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 0;
 }
 
 .link {
-    grid-area: link;
-    justify-self: start;
-    align-self: start;
-    background-color: white;
-    color: black;
-    font-size: 1.8rem;
-    text-decoration: none;
-    padding: 1rem 4rem;
-    border: .2rem solid #333;
-    border-radius: .5rem;
+  grid-area: link;
+  justify-self: start;
+  align-self: start;
+  background-color: white;
+  color: black;
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 1rem 4rem;
+  border: .2rem solid #333;
+  border-radius: .5rem;
 }
 
 .link:hover {
-    background-color: #333;
-    color: white;
+  background-color: #333;
+  color: white;
 }
 
 .linea1 {
-    grid-area: linea1;
-    width: 100%;
-    border: .2rem solid black;
+  grid-area: linea1;
+  width: 100%;
+  border: .2rem solid black;
 }
 
 .linea2 {
-    grid-area: linea2;
-    width: 100%;
-    border: .2rem solid black;
+  grid-area: linea2;
+  width: 100%;
+  border: .2rem solid black;
 }
 
 .coment {
-    grid-area: coment;
-    font-size: 2rem;
-    margin: 0;
+  grid-area: coment;
+  font-size: 2rem;
+  margin: 0;
 }
 
 .lista-comentarios {
-    grid-area: lista-comentarios;
-    font-size: 1.5rem;
+  grid-area: lista-comentarios;
+  font-size: 1.5rem;
 }
 
 .formulario {
-    grid-area: opinion;
-    font-size: 2rem;
+  grid-area: opinion;
+  font-size: 2rem;
 }
 
 .formulario h3 {
-    margin: 0 0 1rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .formulario textarea {
-    width: 100%;
-    height: 10rem;
-    padding: 1rem;
-    resize: vertical;
-    border: .2rem solid #666;
-    background-color: #dcdcdc;
-    margin-bottom: 1rem;
+  width: 100%;
+  height: 10rem;
+  padding: 1rem;
+  resize: vertical;
+  border: .2rem solid #666;
+  background-color: #dcdcdc;
+  margin-bottom: 1rem;
 }
 
-.formulario input[type="radio"]{
-    transform: scale(1.2);
-    margin: 0 1rem 0 .5rem;
+.formulario input[type="radio"] {
+  transform: scale(1.2);
+  margin: 0 1rem 0 .5rem;
 }
 
 .formulario input[type="submit"] {
-    width: 25%;
-    padding: 1.5rem;
-    margin-top: 1.5rem;
-    background-color: white;
-    border: .2rem solid #333;
-    font-size: 1.8rem;
-    cursor: pointer;
+  width: 25%;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  background-color: white;
+  border: .2rem solid #333;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
 .formulario input[type="submit"]:hover {
-    background-color: #333;
-    color: white;
+  background-color: #333;
+  color: white;
 }
